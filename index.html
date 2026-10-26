@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">居家水培植物指南5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-i18n="header-title">居家水培植物指南</h1>
+
+        <!-- 导航+语言全部包在这个容器，margin‑left:auto推到右边 -->
+        <div class="header-right-group">
+            <nav>
+                <details>
+                    <summary data-i18n="nav-about">📋 關於水培</summary>
+                    <ul>
+                        <li><a href="#intro">介紹</a></li>
+                        <li><a href="#benefit">水培好處</a></li>
+                        <li><a href="#gallery">適合居家水培的植物</a></li>
+                        <li><a href="#compare">水培與泥土栽培的分別</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary data-i18n="nav-howto">🛠️ 如何製作</summary>
+                    <ul>
+                        <li><a href="#material">居家水培所需的材料</a></li>
+                        <li><a href="#step">水培做法</a></li>
+                        <li><a href="#note">注意事項</a></li>
+                    </ul>
+                </details>
+                <details>
+                    <summary data-i18n="faq-title">❓ 常見問題</summary>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </details>
+            </nav>
+
+            <div class="lang-wrapper" id="langWrap">
+                <button class="lang-drop-trigger" id="langTrigger">
+                    <span data-i18n="nav-lang">🌐 語言</span>
+                    <span class="arrow-icon">▼</span>
+                </button>
+                <div class="lang-drop-menu">
+                    <button data-lang="zhHant" class="lang-option active">繁體中文</button>
+                    <button data-lang="zhHans" class="lang-option">简体中文</button>
+                    <button data-lang="en" class="lang-option">English</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+            <h2 data-i18n="intro-title">居家水培介紹</h2>
+            <p data-i18n="intro-text">水培，也稱水耕栽培，是一種不使用泥土，利用清水搭配營養液直接讓植物根系在水中生長的種植方式。適合在室內、廚房、窗台等空間擺放，打造簡單乾淨的居家綠意。</p>
+            <p><a href="#intro">瞭解更多</a></p>
+    </section>
+
+    <div class="container">
+        <section id="intro">
+            <h2 data-i18n="intro-title">居家水培介紹</h2>
+            <p data-i18n="intro-text">水培，也稱水耕栽培，是一種不使用泥土，利用清水搭配營養液直接讓植物根系在水中生長的種植方式。適合在室內、廚房、窗台等空間擺放，打造簡單乾淨的居家綠意。</p>
+        </section>
+
+        <section id="benefit">
+            <h2 data-i18n="benefit-title">水培的好處</h2>
+            <ul>
+                <li data-i18n="b1">乾淨無泥土，不容易弄髒室內環境</li>
+                <li data-i18n="b2">較少土壤蟲害，例如小黑飛、螞蟻等</li>
+                <li data-i18n="b3">根系狀態一目了然，方便觀察健康狀況</li>
+                <li data-i18n="b4">體積輕巧，適合小公寓、窗台、辦公室</li>
+                <li data-i18n="b5">部分香草可以隨摘隨用，實用又美觀</li>
+            </ul>
+
+        <!-- testing -->
+        <section class="benefit">
+
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/7822/7822036.png" alt="少用水">
+                <h3 data-i18n="saving water"> 用水量少 </h3>
+                <p data-i18n="saving water explain"> 水培不需要用太多的水，亦不會有怕澆太多水的困擾。 </p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.magnific.com/256/5339/5339583.png?semt=ais_white_label" alt="生長速度">
+                <h3 data-i18n="growth rate"> 生長速度快 </h3>
+                <p data-i18n="growth rate explain"> 水培植物因營養液的幫助，它的生長速度普遍比泥土種的快。</p>
+            </div>
+            <div>
+                <img src="https://t4.ftcdn.net/jpg/05/69/31/79/360_F_569317961_Hw2CEbl5YhG4xKFPntLBtfDVCJQ78i1L.jpg" alt="沒農藥">
+                <h3 data-i18n="pesticide free"> 沒農藥 </h3>
+                <p data-i18n="pesticide free explain"> 水培只用到營養液和水，基本上是沒有使用農藥。</p>
+            </div>
+        </section>
+        <!-- testing ends -->
+        </section>
+
+        <section id="compare">
+            <h2 data-i18n="compare-title">水培與泥土栽培的分別</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18n="col-item">項目</th>
+                        <th data-i18n="col-hydro">水培</th>
+                        <th data-i18n="col-soil">泥土栽培</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-i18n="row1">種植介質</td>
+                        <td data-i18n="row1-h">水 / 營養液</td>
+                        <td data-i18n="row1-s">培養土、介質土</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row2">清潔度</td>
+                        <td data-i18n="row2-h">乾淨，不會揚土</td>
+                        <td data-i18n="row2-s">容易沾到泥土</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row3">蟲害機率</td>
+                        <td data-i18n="row3-h">偏低</td>
+                        <td data-i18n="row3-s">較高，容易有土生蟲</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row4">養分管理</td>
+                        <td data-i18n="row4-h">需要定期補充水培營養液</td>
+                        <td data-i18n="row4-s">土壤本身有養分，定期施肥</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row5">維護重點</td>
+                        <td data-i18n="row5-h">定期換水、預防爛根</td>
+                        <td data-i18n="row5-s">控制澆水，避免積水爛根</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="gallery">
+            <h2 data-i18n="gallery-title">適合居家水培的植物</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://image.bvshop.tw/4338/post/4338_68bfd7483f8c3.png.webp" alt="適合水培的超人氣綠植" class="lightbox-img">
+                    <p data-i18n="pic1">超人氣水培觀葉綠植</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://jardinforestier.com.tw/cdn/shop/articles/dda70e4a17474ab7b849383230f9e4b3.jpg?v=1782105176" alt="十種適合水培的香草植物" class="lightbox-img">
+                    <p data-i18n="pic2">可食用水培香草植物</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="material">
+            <h2 data-i18n="material-title">居家水培所需的材料</h2>
+            <ul>
+                <li data-i18n="m1">透明玻璃瓶 / 容器（水杯、水培瓶均可）</li>
+                <li data-i18n="m2">要水培的植物枝條或小苗</li>
+                <li data-i18n="m3">乾淨的水（靜置過的自來水最佳）</li>
+                <li data-i18n="m4">水培專用營養液（非必需，後期生長使用）</li>
+                <li data-i18n="m5">剪刀、清水，用來修剪枝條</li>
+            </ul>
+        </section>
+
+    <section class="step">
+        <h2 data-i18n="step-title">水培做法 (option 1)</h2>
+        <ul>
+            <li data-i18n="s1">挑選健康的植物枝條，切口斜剪，去除下方多餘葉片</li>
+            <li data-i18n="s2">自來水先靜置一晚散走氯氣</li>
+            <li data-i18n="s3">放入容器，水位不要淹過全部葉片，只浸到切口位置</li>
+            <li data-i18n="s4">放在明亮散射光位置，避開陽光直曬</li>
+            <li data-i18n="s5">等待長出新根，生根後可以少量加入營養液</li>
+        </ul>
+    </section>
+    
+    <!-- testing -->
+    <section class="steps">
+
+    <img src="https://cdn02.pinkoi.com/product/di74Gw7a/2/640x530.jpg" alt="香菜">        
+    
+    <div class="info">
+        <h2 data-i18n="step-title">水培做法 (option 2)</h2>
+        <ul>
+            <li data-i18n="s1">挑選健康的植物枝條，切口斜剪，去除下方多餘葉片</li>
+            <li data-i18n="s2">自來水先靜置一晚散走氯氣</li>
+            <li data-i18n="s3">放入容器，水位不要淹過全部葉片，只浸到切口位置</li>
+            <li data-i18n="s4">放在明亮散射光位置，避開陽光直曬</li>
+            <li data-i18n="s5">等待長出新根，生根後可以少量加入營養液</li>
+        </ul>
+    </div>
+
+    <!-- testing ends -->
+
+    </section>
+
+        <section id="note">
+            <h2 data-i18n="note-title">注意事項</h2>
+            <ul>
+                <li data-i18n="n1">定期換水，一般夏天2～3天一次、冬天7天左右一次</li>
+                <li data-i18n="n2">若發現根部發黑、有臭味，代表爛根，要立刻剪掉爛根並換水</li>
+                <li data-i18n="n3">不要放在太陽直曬處，容易長藻類讓水變綠</li>
+                <li data-i18n="n4">營養液不要加太多，濃度太高會燒根</li>
+                <li data-i18n="n5">葉片不要長期泡在水裡，容易腐爛發臭</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2 data-i18n="faq-title">常見問題 FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="q1">Q：水培一定要加營養液嗎？</div>
+                <div class="faq-answer">
+                    <p data-i18n="a1">剛開始生根階段不需要營養液；等到根系長得茂密之後，再少量添加就可以。只清水也可以存活一段時間，但長期會缺養分。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="q2">Q：水變綠、長青苔怎麼辦？</div>
+                <div class="faq-answer">
+                    <p data-i18n="a2">主要原因是陽光直射。移到散射光位置，把容器洗乾淨、全部換新水即可。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="q3">Q：為什麼根部會發臭、發黑？</div>
+                <div class="faq-answer">
+                    <p data-i18n="a3">多數是缺氧爛根。把腐爛的根全部剪乾淨，容器清洗消毒，換上新水，並減少水位。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="footer">
+            <p>Copyright © 2026 Hong Kong Baptist University. All rights reserved.</p>
+    </section>
+
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="preview">
+    </div>
+
+<script>
+const i18nData = {
+    zhHant:{
+        title:"居家水培植物指南",
+        "header-title":"居家水培植物指南",
+        "nav-about":"📋 關於水培",
+        "nav-howto":"🛠️ 如何製作",
+        "nav-lang": "🌐 語言",
+        "gallery-title":"適合居家水培的植物",
+        "pic1":"超人氣水培觀葉綠植",
+        "pic2":"可食用水培香草",
+        "pic3":"水培香菜示範",
+        "intro-title":"居家水培介紹",
+        "intro-text":"水培，也稱水耕栽培，是一種不使用泥土，利用清水搭配營養液直接讓植物根系在水中生長的種植方式。適合在室內、廚房、窗台等空間擺放，打造簡單乾淨的居家綠意。",
+        "benefit-title":"水培的好處",
+        "b1":"乾淨無泥土，不容易弄髒室內環境",
+        "b2":"較少土壤蟲害，例如小黑飛、螞蟻等",
+        "b3":"根系狀態一目了然，方便觀察健康狀況",
+        "b4":"體積輕巧，適合小公寓、窗台、辦公室",
+        "b5":"部分香草可以隨摘隨用，實用又美觀",
+        "saving water":"少用水",
+        "saving water explain":"水培不需要用太多的水，亦不會有怕澆太多水的困擾。",
+        "growth rate":"生長速度快",
+        "growth rate explain":"水培植物因營養液的幫助，它的生長速度普遍比泥土種的快。",
+        "pesticide free":"沒農藥",
+        "pesticide free explain":"水培只用到營養液和水，基本上是沒有使用農藥。",
+        "compare-title":"水培與泥土栽培的分別",
+        "col-item":"項目",
+        "col-hydro":"水培",
+        "col-soil":"泥土栽培",
+        "row1":"種植介質",
+        "row1-h":"水 / 營養液",
+        "row1-s":"培養土、介質土",
+        "row2":"清潔度",
+        "row2-h":"乾淨，不會揚土",
+        "row2-s":"容易沾到泥土",
+        "row3":"蟲害機率",
+        "row3-h":"偏低",
+        "row3-s":"較高，容易有土生蟲",
+        "row4":"養分管理",
+        "row4-h":"需要定期補充水培營養液",
+        "row4-s":"土壤本身有養分，定期施肥",
+        "row5":"維護重點",
+        "row5-h":"定期換水、預防爛根",
+        "row5-s":"控制澆水，避免積水爛根",
+        "material-title":"居家水培所需的材料",
+        "m1":"透明玻璃瓶 / 容器（水杯、水培瓶均可）",
+        "m2":"要水培的植物枝條或小苗",
+        "m3":"乾淨的水（靜置過的自來水最佳）",
+        "m4":"水培專用營養液（非必需，後期生長使用）",
+        "m5":"剪刀、清水，用來修剪枝條",
+        "step-title":"水培做法",
+        "s1":"挑選健康的植物枝條，切口斜剪，去除下方多餘葉片",
+        "s2":"自來水先靜置一晚散走氯氣",
+        "s3":"放入容器，水位不要淹過全部葉片，只浸到切口位置",
+        "s4":"放在明亮散射光位置，避開陽光直曬",
+        "s5":"等待長出新根，生根後可以少量加入營養液",
+        "note-title":"注意事項",
+        "n1":"定期換水，一般夏天2～3天一次、冬天7天左右一次",
+        "n2":"若發現根部發黑、有臭味，代表爛根，要立刻剪掉爛根並換水",
+        "n3":"不要放在太陽直曬處，容易長藻類讓水變綠",
+        "n4":"營養液不要加太多，濃度太高會燒根",
+        "n5":"葉片不要長期泡在水裡，容易腐爛發臭",
+        "faq-title":"常見問題 FAQ",
+        "q1":"Q：水培一定要加營養液嗎？",
+        "a1":"剛開始生根階段不需要營養液；等到根系長得茂密之後，再少量添加就可以。只清水也可以存活一段時間，但長期會缺養分。",
+        "q2":"Q：水變綠、長青苔怎麼辦？",
+        "a2":"主要原因是陽光直射。移到散射光位置，把容器洗乾淨、全部換新水即可。",
+        "q3":"Q：為什麼根部會發臭、發黑？",
+        "a3":"多數是缺氧爛根。把腐爛的根全部剪乾淨，容器清洗消毒，換上新水，並減少水位。"
+    },
+    zhHans:{
+        title:"居家水培植物指南",
+        "header-title":"居家水培植物指南",
+        "nav-about":"📋 关于水培",
+        "nav-howto":"🛠️ 如何制作",
+        "nav-lang": "🌐 语言",
+        "gallery-title":"适合居家水培的植物",
+        "pic1":"高人气水培观叶绿植",
+        "pic2":"可食用水培香草",
+        "pic3":"水培香菜示范",
+        "intro-title":"居家水培介绍",
+        "intro-text":"水培，也叫水耕栽培，是一种不使用泥土，利用清水搭配营养液直接让植物根系在水中生长的种植方式。适合在室内、厨房、窗台等空间摆放，打造干净清爽的居家绿意。",
+        "benefit-title":"水培的好处",
+        "b1":"干净无泥土，不容易弄脏室内环境",
+        "b2":"土壤虫害更少，比如小黑飞、蚂蚁等",
+        "b3":"根系状态一目了然，方便观察健康情况",
+        "b4":"轻巧省空间，适合小户型、窗台、办公室",
+        "b5":"部分香草可以随摘随用，实用又好看",
+        "saving water":"少用水",
+        "saving water explain":"水培不需要用太多的水，亦不会有怕浇太多水的困扰。",
+        "growth rate":"生长速度快",
+        "growth rate explain":"水培植物因营养液的帮助，它的生长速度普遍比泥土种的快。",
+        "pesticide free":"没农药",
+        "pesticide free explain":"水培只用到营养液和水，基本上是没有使用农药。",
+        "compare-title":"水培与泥土栽培的区别",
+        "col-item":"项目",
+        "col-hydro":"水培",
+        "col-soil":"泥土栽培",
+        "row1":"种植介质",
+        "row1-h":"水 / 营养液",
+        "row1-s":"营养土、栽培基质",
+        "row2":"清洁度",
+        "row2-h":"干净，不会扬尘",
+        "row2-s":"容易沾泥土",
+        "row3":"虫害概率",
+        "row3-h":"较低",
+        "row3-s":"偏高，容易滋生土虫",
+        "row4":"养分管理",
+        "row4-h":"需要定期补充水培营养液",
+        "row4-s":"土壤自带养分，定期施肥",
+        "row5":"维护重点",
+        "row5-h":"定期换水，预防烂根",
+        "row5-s":"控制浇水，防止积水烂根",
+        "material-title":"居家水培需要的材料",
+        "m1":"透明玻璃瓶/容器（水杯、水培瓶都可以）",
+        "m2":"准备水培的枝条或者小苗",
+        "m3":"干净水源（静置后的自来水最好）",
+        "m4":"水培专用营养液（非必需，后期生长用）",
+        "m5":"剪刀，用来修剪枝条",
+        "step-title":"水培步骤",
+        "s1":"挑选健康枝条，斜剪切口，去掉下方多余叶片",
+        "s2":"自来水提前静置一晚，散去氯气",
+        "s3":"放入容器，水位不要浸泡叶片，只没过切口",
+        "s4":"放在明亮散射光处，避开阳光直晒",
+        "s5":"等待生根，长出新根之后可以少量添加营养液",
+        "note-title":"注意事项",
+        "n1":"定期换水，夏天约2～3天一次，冬天大约7天一次",
+        "n2":"根部发黑、有异味就是烂根，及时剪掉烂根并换水",
+        "n3":"避免阳光直晒，容易长绿藻让水质变浑",
+        "n4":"营养液宁少勿多，浓度过高会烧根",
+        "n5":"叶片不要长期泡在水中，容易腐烂发臭",
+        "faq-title":"常见问题 FAQ",
+        "q1":"Q：水培一定要加营养液吗？",
+        "a1":"生根初期不需要营养液；根系茂密后再少量添加。只用清水植物也可以存活一段时间，但长期会缺少养分。",
+        "q2":"Q：水变绿、长青苔怎么办？",
+        "a2":"大多是阳光直射造成。移到散射光位置，清洗容器、全部换新水即可。",
+        "q3":"Q：为什么根部发臭发黑？",
+        "a3":"大多是缺氧烂根。把腐烂根系修剪干净，清洗容器，换新水，降低水位。"
+    },
+    en:{
+        title:"Home Hydroponics Guide",
+        "header-title":"Home Hydroponics Guide",
+        "nav-about":"📋 About Hydroponics",
+        "nav-howto":"🛠️ How‑to Guide",
+        "nav-lang": "🌐 Language",
+        "gallery-title":"Plants suitable for home hydroponics",
+        "pic1":"Popular foliage plants for water culture",
+        "pic2":"Edible herbs for hydroponics",
+        "pic3":"Hydroponic coriander demo",
+        "intro-title":"About Home Hydroponics",
+        "intro-text":"Hydroponics is a soilless growing method. Plants grow their roots in water or nutrient solution. It is perfect for indoors, kitchens and windowsills to create clean green space.",
+        "benefit-title":"Benefits of Hydroponics",
+        "b1":"No soil, keeps your room clean",
+        "b2":"Fewer soil pests such as fungus gnats",
+        "b3":"Roots are visible, easy to check plant health",
+        "b4":"Light and compact, ideal for small homes & offices",
+        "b5":"Some herbs can be harvested fresh anytime",
+        "saving water": "Water-efficient",
+        "saving water explain": "Hydroponics requires very little water, and there is no risk of overwatering.",
+        "growth rate": "Rapid growth",
+        "growth rate explain": "Thanks to nutrient solutions, hydroponic plants generally grow faster than those grown in soil.",
+        "pesticide free": "Pesticide-free",
+        "pesticide free explain": "Hydroponics relies solely on nutrient solutions and water, meaning no pesticides are used.",
+        "compare-title":"Hydroponics vs Soil Cultivation",
+        "col-item":"Item",
+        "col-hydro":"Hydroponics",
+        "col-soil":"Soil planting",
+        "row1":"Growing medium",
+        "row1-h":"Water / nutrient solution",
+        "row1-s":"Potting mix",
+        "row2":"Cleanliness",
+        "row2-h":"Clean, no dust",
+        "row2-s":"Messy soil",
+        "row3":"Pest risk",
+        "row3-h":"Low",
+        "row3-s":"Higher, soil pests common",
+        "row4":"Nutrient care",
+        "row4-h":"Add hydroponic nutrients regularly",
+        "row4-s":"Soil contains nutrients, fertilize occasionally",
+        "row5":"Main focus",
+        "row5-h":"Change water regularly, prevent root rot",
+        "row5-s":"Control watering to avoid root rot",
+        "material-title":"What you need",
+        "m1":"Clear glass jar / container",
+        "m2":"Plant cuttings or seedlings",
+        "m3":"Clean water (tap water rested overnight)",
+        "m4":"Hydroponic nutrient liquid (optional for later growth)",
+        "m5":"Scissors for cutting stems",
+        "step-title":"How to grow hydroponically",
+        "s1":"Pick healthy stems, cut diagonally, remove lower leaves",
+        "s2":"Leave tap water overnight to remove chlorine",
+        "s3":"Put cutting in jar, only submerge the cut end, not leaves",
+        "s4":"Place in bright indirect light, avoid direct sun",
+        "s5":"Wait for new roots. Add small amount of nutrient after rooting",
+        "note-title":"Important Notes",
+        "n1":"Change water regularly: every 2–3 days in summer, weekly in winter",
+        "n2":"Black smelly roots mean root rot. Cut rotten roots and replace water",
+        "n3":"Keep away from direct sunlight to avoid algae",
+        "n4":"Do not overuse nutrient solution, strong concentration burns roots",
+        "n5":"Do not submerge leaves in water, they will rot",
+        "faq-title":"FAQ",
+        "q1":"Q: Do I have to use nutrient solution?",
+        "a1":"No need during rooting stage. Add nutrients only after roots grow well. Plants can survive in plain water for a while but lack nutrients long‑term.",
+        "q2":"Q: Why is the water turning green with algae?",
+        "a2":"Direct sunlight causes algae. Move to indirect light, clean the jar and refill water.",
+        "q3":"Q: Why roots turn black and smell bad?",
+        "a3":"Root rot caused by lack of oxygen. Trim rotten roots, clean container, refill water and lower water level."
+    }
+};
+
+// 切換語言
+function changeLang(lang){
+    document.documentElement.lang = lang==="zhHant"?"zh-Hant":lang==="zhHans"?"zh-CN":"en";
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const k = el.getAttribute("data-i18n");
+        el.innerText = i18nData[lang][k];
+    });
+    // 更新高亮
+    document.querySelectorAll('.lang-option').forEach(btn=>{
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    document.getElementById("langWrap").classList.remove("open");
+}
+
+const langWrap = document.getElementById('langWrap');
+const langTrigger = document.getElementById('langTrigger');
+
+langTrigger.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    langWrap.classList.toggle("open");
+})
+
+document.querySelectorAll(".lang-option").forEach(btn=>{
+    btn.addEventListener("click", (e)=>{
+        e.stopPropagation();
+        changeLang(btn.dataset.lang);
+    })
+})
+
+document.addEventListener('click',(e)=>{
+    if(!langWrap.contains(e.target)){
+        langWrap.classList.remove("open");
+    }
+})
+
+// FAQ
+document.querySelectorAll('.faq-question').forEach(q=>{
+    q.onclick = ()=>{
+        q.nextElementSibling.classList.toggle('open');
+    }
+})
+// 燈箱
+const lightbox = document.querySelector('.lightbox');
+const lightboxImg = lightbox.querySelector('img');
+const closeBtn = lightbox.querySelector('.lightbox-close');
+document.querySelectorAll('.lightbox-img').forEach(img=>{
+    img.onclick = ()=>{
+        lightboxImg.src = img.src;
+        lightbox.classList.add('show');
+    }
+})
+closeBtn.onclick = ()=> lightbox.classList.remove('show');
+lightbox.onclick = (e)=>{
+    if(e.target === lightbox) lightbox.classList.remove('show');
+}
+</script>
+</body>
+</html>
