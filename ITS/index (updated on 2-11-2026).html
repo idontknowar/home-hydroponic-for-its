@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">🌱 居家水培植物指南</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header id="siteHeader">
+        <div class="logo">
+            <span class="emoji">🌱</span>
+            <span data-i18n="header-title">居家水培植物指南</span>
+        </div>
+
+        <!-- 桌面導航 -->
+        <ul class="nav-links" id="desktopNav">
+            <li>
+                <button data-dropdown="about">
+                    <span data-i18n="nav-about">關於水培</span>
+                    <span class="chevron">
+                        <svg xmlns="http://w3.org" width="16" height="16" stroke="currentColor" fill="currentColor" viewBox="0 0 16 16" style="display: inline-block; vertical-align: middle; stroke-width: 0.5">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="dropdown-menu" data-menu="about">
+                    <a href="#intro"></span><span data-i18n="nav-drop-intro">介紹</span></a>
+                    <a href="#benefit"></span><span data-i18n="nav-drop-benefit">水培好處</span></a>
+                    <a href="#gallery"></span><span data-i18n="nav-drop-gallery">適合居家水培的植物</span></a>
+                    <a href="#compare"></span><span data-i18n="nav-drop-compare">水培與泥土栽培的分別</span></a>
+                </div>
+            </li>
+            <li>
+                <button data-dropdown="howto">
+                    <span data-i18n="nav-howto">🛠️ 如何製作</span>
+                    <span class="chevron">
+                        <svg xmlns="http://w3.org" width="16" height="16" stroke="currentColor" fill="currentColor" viewBox="0 0 16 16" style="display: inline-block; vertical-align: middle; stroke-width: 0.5">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="dropdown-menu" data-menu="howto">
+                    <a href="#material"><span data-i18n="nav-drop-material">居家水培所需的材料</span></a>
+                    <a href="#step"><span data-i18n="nav-drop-step">水培做法</span></a>
+                    <a href="#note"><span data-i18n="nav-drop-note">注意事項</span></a>
+                </div>
+            </li>
+            <li>
+                <a href="#faq" data-i18n="nav-faq">常見問題</a>
+            </li>
+            <li>
+                <a href="#contact" data-i18n="nav-contact">聯絡我們</a>
+            </li>
+        </ul>
+
+        <!-- 右侧操作 -->
+        <div class="header-actions">
+            <!-- 语言切换 -->
+            <div class="lang-wrapper" id="langWrap">
+                <button class="lang-trigger" id="langTrigger">
+                    <span data-i18n="nav-lang">🌏 語言</span>
+                    <span class="arrow-icon">
+                        <svg xmlns="http://w3.org" width="16" height="16" stroke="currentColor" fill="currentColor" viewBox="0 0 16 16" style="display: inline-block; vertical-align: middle; stroke-width: 0.7">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="lang-menu">
+                    <button data-lang="zhHant" class="lang-option active">繁體中文</button>
+                    <button data-lang="zhHans" class="lang-option">简体中文</button>
+                    <button data-lang="en" class="lang-option">English</button>
+                </div>
+            </div>
+
+            <!-- 汉堡按钮（移动端） -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 移动端面板 -->
+    <div class="mobile-panel" id="mobilePanel">
+        <div class="mobile-group-title" data-i18n="nav-about">關於水培</div>
+        <a href="#intro"><span>🌿</span><span data-i18n="nav-drop-intro">介紹</span></a>
+        <a href="#benefit"><span>🌟</span><span data-i18n="nav-drop-benefit">水培好處</span></a>
+        <a href="#gallery"><span>🌾</span><span data-i18n="nav-drop-gallery">適合居家水培的植物</span></a>
+        <a href="#compare"><span>⚖️</span><span data-i18n="nav-drop-compare">水培與泥土栽培的分別</span></a>
+
+        <div class="mobile-group-title" data-i18n="nav-howto">🛠️ 如何製作</div>
+        <a href="#material"><span>🔨</span><span data-i18n="nav-drop-material">居家水培所需的材料</span></a>
+        <a href="#step"><span>📝</span><span data-i18n="nav-drop-step">水培做法</span></a>
+        <a href="#note"><span>⚠️</span><span data-i18n="nav-drop-note">注意事項</span></a>
+
+        <div class="mobile-group-title" data-i18n="nav-faq">常見問題</div>
+        <a href="#faq"><span>❓</span><span data-i18n="nav-faq">常見問題</span></a>
+        <a href="#contact"><span>💬</span><span data-i18n="nav-contact">聯絡我們</span></a>
+
+        <div class="mobile-group-title" data-i18n="nav-lang">🌏 語言</div>
+        <div class="mobile-lang-group">
+            <button data-lang="zhHant" class="lang-option active">繁體中文</button>
+            <button data-lang="zhHans" class="lang-option">简体中文</button>
+            <button data-lang="en" class="lang-option">English</button>
+        </div>
+    </div>
+
+    <!-- ===== 原有页面内容 ===== -->
+    <section class="intro">
+        <h2 data-i18n="intro-title">居家水培介紹</h2>
+        <p data-i18n="intro-text">水培，也稱水耕栽培，是一種不使用泥土，利用清水搭配營養液直接讓植物根系在水中生長的種植方式。適合在室內、廚房、窗台等空間擺放，打造簡單乾淨的居家綠意。</p>
+        <p><a href="#intro" data-i18n="intro-more">瞭解更多</a></p>
+    </section>
+
+    <div class="container">
+        <section id="intro">
+            <h2 data-i18n="intro-title">居家水培介紹</h2>
+            <p data-i18n="intro-text">水培，也稱水耕栽培，是一種不使用泥土，利用清水搭配營養液直接讓植物根系在水中生長的種植方式。適合在室內、廚房、窗台等空間擺放，打造簡單乾淨的居家綠意。</p>
+        </section>
+
+        <section id="benefit">
+            <h2 data-i18n="benefit-title">水培的好處</h2>
+            <ul>
+                <li data-i18n="b1">乾淨無泥土，不容易弄髒室內環境</li>
+                <li data-i18n="b2">較少土壤蟲害，例如小黑飛、螞蟻等</li>
+                <li data-i18n="b3">根系狀態一目了然，方便觀察健康狀況</li>
+                <li data-i18n="b4">體積輕巧，適合小公寓、窗台、辦公室</li>
+                <li data-i18n="b5">部分香草可以隨摘隨用，實用又美觀</li>
+            </ul>
+        </section>
+
+        <section class="benefit">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/7822/7822036.png" alt="少用水">
+                <h3 data-i18n="saving water">用水量少</h3>
+                <p data-i18n="saving water explain">水培不需要用太多的水，亦不會有怕澆太多水的困擾。</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.magnific.com/256/5339/5339583.png?semt=ais_white_label" alt="生長速度">
+                <h3 data-i18n="growth rate">生長速度快</h3>
+                <p data-i18n="growth rate explain">水培植物因營養液的幫助，它的生長速度普遍比泥土種的快。</p>
+            </div>
+            <div>
+                <img src="https://t4.ftcdn.net/jpg/05/69/31/79/360_F_569317961_Hw2CEbl5YhG4xKFPntLBtfDVCJQ78i1L.jpg" alt="沒農藥">
+                <h3 data-i18n="pesticide free">沒農藥</h3>
+                <p data-i18n="pesticide free explain">水培只用到營養液和水，基本上是沒有使用農藥。</p>
+            </div>
+        </section>
+
+        <section id="compare">
+            <h2 data-i18n="compare-title">水培與泥土栽培的分別</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th data-i18n="col-item">項目</th>
+                        <th data-i18n="col-hydro">水培</th>
+                        <th data-i18n="col-soil">泥土栽培</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-i18n="row1">種植介質</td><td data-i18n="row1-h">水 / 營養液</td><td data-i18n="row1-s">培養土、介質土</td></tr>
+                    <tr><td data-i18n="row2">清潔度</td><td data-i18n="row2-h">乾淨，不會揚土</td><td data-i18n="row2-s">容易沾到泥土</td></tr>
+                    <tr><td data-i18n="row3">蟲害機率</td><td data-i18n="row3-h">偏低</td><td data-i18n="row3-s">較高，容易有土生蟲</td></tr>
+                    <tr><td data-i18n="row4">養分管理</td><td data-i18n="row4-h">需要定期補充水培營養液</td><td data-i18n="row4-s">土壤本身有養分，定期施肥</td></tr>
+                    <tr><td data-i18n="row5">維護重點</td><td data-i18n="row5-h">定期換水、預防爛根</td><td data-i18n="row5-s">控制澆水，避免積水爛根</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="gallery">
+            <h2 data-i18n="gallery-title">適合居家水培的植物</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://image.bvshop.tw/4338/post/4338_68bfd7483f8c3.png.webp" alt="適合水培的超人氣綠植" class="lightbox-img">
+                    <p data-i18n="pic1">超人氣水培觀葉綠植</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://jardinforestier.com.tw/cdn/shop/articles/dda70e4a17474ab7b849383230f9e4b3.jpg?v=1782105176" alt="十種適合水培的香草植物" class="lightbox-img">
+                    <p data-i18n="pic2">可食用水培香草植物</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="material">
+            <h2 data-i18n="material-title">居家水培所需的材料</h2>
+            <ul>
+                <li data-i18n="m1">透明玻璃瓶 / 容器（水杯、水培瓶均可）</li>
+                <li data-i18n="m2">要水培的植物枝條或小苗</li>
+                <li data-i18n="m3">乾淨的水（靜置過的自來水最佳）</li>
+                <li data-i18n="m4">水培專用營養液（非必需，後期生長使用）</li>
+                <li data-i18n="m5">剪刀、清水，用來修剪枝條</li>
+            </ul>
+        </section>
+
+        <section class="step" id="step">
+            <h2 data-i18n="step-title">水培做法</h2>
+            <ul>
+                <li data-i18n="s1">挑選健康的植物枝條，切口斜剪，去除下方多餘葉片</li>
+                <li data-i18n="s2">自來水先靜置一晚散走氯氣</li>
+                <li data-i18n="s3">放入容器，水位不要淹過全部葉片，只浸到切口位置</li>
+                <li data-i18n="s4">放在明亮散射光位置，避開陽光直曬</li>
+                <li data-i18n="s5">等待長出新根，生根後可以少量加入營養液</li>
+            </ul>
+        </section>
+
+        <section class="steps">
+            <img src="https://cdn02.pinkoi.com/product/di74Gw7a/2/640x530.jpg" alt="香菜">
+            <div class="info">
+                <h2 data-i18n="step-title">水培做法</h2>
+                <ul>
+                    <li data-i18n="s1">挑選健康的植物枝條，切口斜剪，去除下方多餘葉片</li>
+                    <li data-i18n="s2">自來水先靜置一晚散走氯氣</li>
+                    <li data-i18n="s3">放入容器，水位不要淹過全部葉片，只浸到切口位置</li>
+                    <li data-i18n="s4">放在明亮散射光位置，避開陽光直曬</li>
+                    <li data-i18n="s5">等待長出新根，生根後可以少量加入營養液</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="note">
+            <h2 data-i18n="note-title">注意事項</h2>
+            <ul>
+                <li data-i18n="n1">定期換水，一般夏天2～3天一次、冬天7天左右一次</li>
+                <li data-i18n="n2">若發現根部發黑、有臭味，代表爛根，要立刻剪掉爛根並換水</li>
+                <li data-i18n="n3">不要放在太陽直曬處，容易長藻類讓水變綠</li>
+                <li data-i18n="n4">營養液不要加太多，濃度太高會燒根</li>
+                <li data-i18n="n5">葉片不要長期泡在水裡，容易腐爛發臭</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2 data-i18n="faq-title">常見問題 FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="q1">Q：水培一定要加營養液嗎？</div>
+                <div class="faq-answer"><p data-i18n="a1">剛開始生根階段不需要營養液；等到根系長得茂密之後，再少量添加就可以。只清水也可以存活一段時間，但長期會缺養分。</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="q2">Q：水變綠、長青苔怎麼辦？</div>
+                <div class="faq-answer"><p data-i18n="a2">主要原因是陽光直射。移到散射光位置，把容器洗乾淨、全部換新水即可。</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" data-i18n="q3">Q：為什麼根部會發臭、發黑？</div>
+                <div class="faq-answer"><p data-i18n="a3">多數是缺氧爛根。把腐爛的根全部剪乾淨，容器清洗消毒，換上新水，並減少水位。</p></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== 联系我们（版权前） ===== -->
+    <section class="contact-section" id="contact">
+        <div class="contact-card">
+            <h2 data-i18n="contact-title">聯絡我們</h2>
+            <p class="sub" data-i18n="contact-sub">加入 WhatsApp 群組，與其他種植新手交流心得</p>
+            <div class="qr-frame">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRvBgO9-1_UuewgQSka0EgB9K1uPmd1frmbXo-_eCTOw&s=10" alt="WhatsApp 群組二維碼">
+            </div>
+            <br>
+            <a href="https://chat.whatsapp.com/" target="_blank" rel="noopener" class="wa-label">
+                <span>📱</span> <span data-i18n="contact-wa">WhatsApp 加群</span>
+            </a>
+            <p class="hint" data-i18n="contact-hint">用手機掃描二維碼，或點擊按鈕加入群組</p>
+        </div>
+    </section>
+
+    <!-- 版权 -->
+    <section class="footer">
+        <p>Copyright © 2026 Hong Kong Baptist University. All rights reserved.</p>
+    </section>
+
+    <!-- 灯箱 -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="preview">
+    </div>
+</body>
+</html>
